@@ -1,3 +1,8 @@
+html {
+    margin: 0;
+    
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -22,9 +27,16 @@ nav {
     padding-left: 70%;
 }
 
+.header-nav {
+    margin-top: 0;
+    background-position-y: 0;
+}
+
 .header-ul {
     list-style: none;    
-    
+    margin-top: 0;
+    padding-top: 45px;
+
 }
 
 .header-ul li {
@@ -45,11 +57,14 @@ nav {
 body {
     background-image: url("images/background.png");
     background-repeat: repeat;
+    margin: 0;
+    width: 100vw;
     
 }
 
 .slider {
-	width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
     overflow: hidden;
     z-index: 20;
@@ -60,16 +75,20 @@ body {
 	padding: 0;
 	width: 300%;
 	
-	animation: cambio 20s infinite alternate linear;
+	animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
-	width: 100%;
+	width: 100vw;
 	list-style: none;
 }
 
 .slider img {
-	width: 100%;
+	width: 100vw;
+}
+
+p {
+    font-family: sans-serif;
 }
 
 @keyframes cambio {
@@ -88,45 +107,108 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
-
+    width: 100vw;
 
 }
 
+
 article {
-    flex-basis: 30%;
+    flex-basis: 15% ;
     -webkit-box-shadow: 6px 20px 6px -2px gray;
 	-moz-box-shadow: 6px 8px 6px -2px gray;
     box-shadow: 6px 8px 6px -2px gray;
-    margin-top: 20px;
+    margin: 1%;
+    border-radius: 10px;
+       
+    
+
+}
+
+article p {
+    padding: 20px 30px;
+    margin: 0px;
+}
+
+article h3 {
+    padding-left: 30px;
 }
 
 .variedades {
     text-align: center;
+    padding: 30px;
+    font-size: 50px;
 }
 
 #nosotros {
     text-align: center;
+    margin: 5%;
+    
+}
+
+#nosotros h2 {
+    font-size: 50px;
 }
 
 #contacto {
     text-align: left;
+    margin: 5%;
     
 }
 
+
 #contacto h2 {
     text-align: center;
+    font-size: 50px;
+}
+
+form {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 input {
     display: block;
+    border-radius: 5px;
+    border: solid 1px;
+    margin-bottom: 20px;
 }
 
 input[type=text] {
     display: block;
+    
+}
+
+.data-in {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.data-con {
+    height: 130px;
+    text-align: left;
 }
 
 footer {
     text-align: center;
+    background-color: #f4ad42;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    padding: 0px 25px;
 }
